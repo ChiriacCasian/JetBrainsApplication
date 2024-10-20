@@ -1,13 +1,18 @@
 We have to find all common commits and then check for each if it is a merge base only then we can say it is a latest common commit
 We check that a common commit is a merge base if it has two children that are not common commits
 
+
+scenario 1 : where both branches merge into one in the c17 commit and the children of c17 are NON-common commits so c17 is identified correctly as a merge base   
+
 c15 -\
-      c17 - c18         scenario 1 : where both branches merge into one in the c17 commit and the children of c17 are NON-common commits so c17 is identified correctly as a merge base   
+      c17 - c18         
 c16 -/
 
 
+scenario 2 : where c3 is correctly identified as a NON-merge base and c4 is correctly identified as a merge base because it is a common commit with all children being NON-common commits
+
        /- c5 - c6
-c3 - c4                  scenario 2 : where c3 is correctly identified as a NON-merge base and c4 is correctly identified as a merge base because it is a common commit with all children being NON-common commits
+c3 - c4                  
        \- c7 - c8
 
 Rule for programatically checking if a commit is a merge base : 
