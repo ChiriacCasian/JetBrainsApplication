@@ -8,9 +8,6 @@ import java.util.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-/**
- * Implementation of the LastCommonCommitsFinder interface.
- */
 public class LastCommonCommitsFinderImpl implements LastCommonCommitsFinder {
     private static final String BASE_URL = "https://api.github.com/repos/";
     private static final String COMMITS_ENDPOINT = "/commits?sha=";
