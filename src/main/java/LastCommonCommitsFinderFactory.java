@@ -1,5 +1,8 @@
 public interface LastCommonCommitsFinderFactory {
 
+
+
+
     /**
      * Creates an instance of LastCommonCommitsFinder for a particular GitHub.com repository.
      * This method must not check connectivity.
