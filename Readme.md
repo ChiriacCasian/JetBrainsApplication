@@ -28,3 +28,6 @@ Rule for programatically checking if a commit is a merge base :
 
 To-Do:
 add pagination support for very large projects (currently supports only 100 commits)
+
+Tests : 
+      the PAT Token has to be inserted in the application.properties under PAT_TOKEN = '' in order to test
